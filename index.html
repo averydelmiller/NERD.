@@ -31,6 +31,25 @@ onReady(function () {
     show('loading', false);
 });
 </script>
+<style>
+	#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("http://i.stack.imgur.com/MnyxU.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+</style>
 </head>
 <body>
 <div id="page" style="text-align: center;">
@@ -48,22 +67,6 @@ Image is from EPIC RAP BATTLE: NERD VS. GEEK. Images modified by Avery Miller.
           *{
     margin: 0;
     padding: 0;
-}
-#page {
-    display: none;
-}
-#loading {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(192, 192, 192, 0.5);
-    background-image: url("http://i.stack.imgur.com/MnyxU.gif");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 p,a{
