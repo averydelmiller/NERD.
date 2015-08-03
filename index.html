@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-<!--<div style="visibility: hidden">
-//paste this code under head tag or in a seperate js file.
-	// Wait for window load
-	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});      
-</div>-->
 <meta charset="UTF-8">
 <title>NERD. By Avery Miller</title>
 <meta name="description" content="Ever wanted to watch a nerd look at your computer cursor? Well, now you can!">
 <meta name="keywords" content="Avery Miller, Rhett and Link, Weird Websites, The Internet is a Weird Place, Nerd watches cursor">
 <meta name="author" content="Avery Miller">
-<!-- Loading symbol via http://smallenvelop.com/
-<style>
-	/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_8.gif) center no-repeat #fff;
+<!-- Loading icon script-->
+<script>
+	function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 1000);
+
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
 }
-</style>-->
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+
+onReady(function () {
+    show('page', true);
+    show('loading', false);
+});
+</script>
 </head>
 <body>
-<div class="se-pre-con" style="text-align: center;">
+<div class="page" style="text-align: center;">
 <!--
 NERD.
 Made by Avery Miller. Some code by Jan Dellsperger from Cloudtec.ch.
@@ -53,6 +48,22 @@ Image is from EPIC RAP BATTLE: NERD VS. GEEK. Images modified by Avery Miller.
           *{
     margin: 0;
     padding: 0;
+}
+#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("http://i.stack.imgur.com/MnyxU.gif");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 p,a{
