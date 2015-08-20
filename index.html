@@ -21,47 +21,6 @@
 <meta name="description" content="Ever wanted to watch a nerd look at your computer cursor? Well, now you can!">
 <meta name="keywords" content="Avery Miller, Rhett and Link, Weird Websites, The Internet is a Weird Place, Nerd watches cursor">
 <meta name="author" content="Avery Miller">
-<!-- Loading icon script-->
-<script>
-	function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 1000);
-
-    function checkReady() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
-    }
-}
-
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-
-onReady(function () {
-    show('page', true);
-    show('loading', false);
-});
-</script>
-<style>
-	#page {
-    display: none;
-}
-#loading {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(192, 192, 192, 0.5);
-    background-image: url("http://i.stack.imgur.com/MnyxU.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-</style>
 </head>
 <body>
 <div id="page" style="text-align: center;">
@@ -71,7 +30,7 @@ Made by Avery Miller. Some code by Jan Dellsperger from Cloudtec.ch.
 Made for Rhett and Link's THE INTERNET IS A WEIRD PLACE contest thingy.
 Image is from EPIC RAP BATTLE: NERD VS. GEEK. Images modified by Avery Miller.
 -->
-<br></br>
+<br><br>
         
         <!--<link rel="stylesheet" type="text/css" href="css/rotating-heads.css" />-->
         
@@ -290,12 +249,13 @@ else { document.getElementById(d).style.display = "none"; }
    onmouseover="ReverseDisplay('credits'); return true;"
    href="http://www.averymiller.org" Style="color: black; text-decoration: none;" title="Click for the credits!">
 Created by Avery Miller
-<br>
+</a>
+
 <a href="https://twitter.com/averybmiller" class="twitter-follow-button" data-show-count="true">Follow @averybmiller</a>
 <a href="https://twitter.com/share" class="twitter-share-button" data-text="Wow, this page is really weird, @RhettAndLink!" data-via="averybmiller" data-related="averybmiller" data-count="none" data-hashtags="nerd">Tweet</a>
 <div id="credits" style="display:none;">
-</br>
-<p> NERD. <br></br>
+
+<p> NERD. <br>
 Made by <a href="http://www.averymiller.org" 
 style="color: black; text-decoration: none;" title="A 14-year-old boy.">Avery Miller</a> for Rhett and Link's THE INTERNET IS A WEIRD PLACE contest. Images animated by Avery Miller. Nerd (played by <a href="http://www.averymiller.org/file/cb2a1f1361eab94f3f1b099eea79d50a" 
 style="color: black; text-decoration: none;" title="Click the Link Neal for extra weirdness.">Link Neal</a>) is from EPIC RAP BATTLE: NERD VS. GEEK. Some code by Jan Dellsperger from Cloudtec.ch.
@@ -303,8 +263,9 @@ style="color: black; text-decoration: none;" title="Click the Link Neal for extr
 This site was featured on an episode of GMM! Check it out at 
  <a href="https://youtu.be/cU5BjRqjRbY?t=5m11s." 
 style="color: black; text-decoration: none;" title="Such show. Much internet.">https://youtu.be/cU5BjRqjRbY?t=5m11s.</a>
-</br>
+
 </p>
+</div>
 </div>
 </div>
 </body>
@@ -319,6 +280,7 @@ style="color: black; text-decoration: none;" title="Such show. Much internet.">h
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<br></br>
+<br>
+<footer>
 </footer>
 </html>
